@@ -11,19 +11,7 @@ Checkout our specialized configs that depend on this.
 ### Installation
 
 ```bash
-npm i -D @gik/eslint-config
-```
-
-After installing, make sure to have installed these peer-dependencies on your project.
-
-*Look for the correct version for the peer-dependencies*
-``` bash
-npm ls --depth=0
-```
-
-*Install the corresponding versions according to output*
-``` bash
-npm i -D eslint@^x.y.z babel-eslint@^x.y.z eslint-plugin-import@^x.y.z
+npm i -D eslint @gik/eslint-config
 ```
 
 ### Usage
