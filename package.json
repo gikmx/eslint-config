@@ -1,5 +1,5 @@
 {
-    "name": "@gik/eslint-config-gik",
+    "name": "@gik/eslint-config",
     "version": "0.0.1",
     "description": "GIK's general approach to EcmaScript",
     "license": "MIT",

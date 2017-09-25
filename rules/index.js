@@ -1,7 +1,7 @@
 module.exports = {
 
     // Set aribnb rules as default (community standard as of 09/2017)
-    extends: '../node_modules/eslint-config-airbnb-base/index.js',
+    extends: 'airbnb-base',
 
     // use eslint as a parser
     parser: 'babel-eslint',

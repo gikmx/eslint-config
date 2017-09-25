@@ -3,5 +3,5 @@ node_modules
 .tern-port
 
 # Only apps should have lock-files
-yarn.lock
-package-lock.json
+yarn.lock*
+package-lock.json*

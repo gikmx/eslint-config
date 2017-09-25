@@ -11,7 +11,7 @@ Checkout our specialized configs that depend on this.
 ### Installation
 
 ```bash
-npm i -D @gik/eslint-config-gik
+npm i -D @gik/eslint-config
 ```
 
 After installing, make sure to have installed these peer-dependencies on your project.
@@ -31,6 +31,6 @@ npm i -D eslint@^x.y.z babel-eslint@^x.y.z eslint-plugin-import@^x.y.z
 In the corresponding `.eslintrc` file (or equivalent) add the `extends` property.
 ``` json
 {
-  "extends": "gik"
+  "extends": "@gik"
 }
 ```
