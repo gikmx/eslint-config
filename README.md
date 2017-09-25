@@ -5,8 +5,8 @@ These are the common rules that all of our projects must comply.
 
 Checkout our specialized configs that depend on this.
 
-- __[gik-cycle](http://github.com/gikmx/eslint-config-gik-cycle)__ for CycleJS apps.
-- __[gik-node](http://github.com/gikmx/eslint-config-gik-node)__ for generic NodeJS apps.
+- __[@gik/cycle](http://github.com/gikmx/eslint-config-cycle)__ for CycleJS apps.
+- __[@gik/node](http://github.com/gikmx/eslint-config-node)__ for generic NodeJS apps.
 
 ### Installation
 
