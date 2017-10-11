@@ -1,6 +1,6 @@
 {
     "name": "@gik/eslint-config",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "GIK's general approach to EcmaScript",
     "license": "MIT",
     "homepage": "https://github.com/gikmx/eslint",

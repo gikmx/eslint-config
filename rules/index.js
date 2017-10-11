@@ -24,6 +24,7 @@ module.exports = {
         // ------------------------------------------------------------------------ Errors
 
         indent: ['error', 4], // 4 spaces for indent will be enforced.
+        curly: ['error', 'multi-or-nest'], // Be flexible yet constant with curly braces.
         'import/no-unresolved': 'error', // modules must be correctly resolved.
 
         // ---------------------------------------------------------------------- Warnings
@@ -35,6 +36,7 @@ module.exports = {
         'spaced-comment': 'warn', // better comment readability
         'space-before-blocks': 'warn', // another readability enhancement.
         'object-curly-spacing': 'warn',
+        'space-infix-ops': 'warn',
 
         // ---------------------------------------------------------------------- Disabled
 
