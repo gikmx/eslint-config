@@ -17,6 +17,7 @@ module.exports = {
     plugins: [
         // Resolving module imports (instead of requires)
         'import',
+        'jsdoc'
     ],
 
     rules: {// 0 = off, 1 = warn, 2 = error
@@ -37,6 +38,16 @@ module.exports = {
         'space-before-blocks': 'warn', // another readability enhancement.
         'object-curly-spacing': 'warn',
         'space-infix-ops': 'warn',
+        'jsdoc/check-param-names': 'warn',// all jsdoc related keys are desirable only
+        'jsdoc/check-tag-names': 'warn',
+        'jsdoc/check-types': 'warn',
+        'jsdoc/newline-after-description': 'warn',
+        'jsdoc/require-hyphen-before-param-description': 'warn',
+        'jsdoc/require-param-description': 'warn',
+        'jsdoc/require-returns-description': 'warn',
+        'jsdoc/require-param': 'warn',
+        'jsdoc/require-param-type': 'warn',
+        'jsdoc/require-returns-type': 'warn',
 
         // ---------------------------------------------------------------------- Disabled
 
@@ -49,5 +60,8 @@ module.exports = {
         'no-confusing-arrow': 'off', // what's confusing about a ternary? c'mon!
         'function-paren-newline': 'off', // sometimes its needed for readabiity.
         'no-plusplus': 'off', // Aww c'mon man, I like using it.
+        'jsdoc/require-description-complete-sentence': 'off',
+        'jsdoc/require-example': 'off', // there aren't always examples needed.
+
     },
 };
