@@ -17,7 +17,7 @@ module.exports = {
     plugins: [
         // Resolving module imports (instead of requires)
         'import',
-        'jsdoc'
+        'jsdoc',
     ],
 
     rules: {// 0 = off, 1 = warn, 2 = error
@@ -38,7 +38,7 @@ module.exports = {
         'space-before-blocks': 'warn', // another readability enhancement.
         'object-curly-spacing': 'warn',
         'space-infix-ops': 'warn',
-        'jsdoc/check-param-names': 'warn',// all jsdoc related keys are desirable only
+        'jsdoc/check-param-names': 'warn', // all jsdoc related keys are desirable only
         'jsdoc/check-tag-names': 'warn',
         'jsdoc/check-types': 'warn',
         'jsdoc/newline-after-description': 'warn',
