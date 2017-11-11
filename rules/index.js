@@ -24,9 +24,29 @@ module.exports = {
 
         // ------------------------------------------------------------------------ Errors
 
-        indent: ['error', 4], // 4 spaces for indent will be enforced.
-        curly: ['error', 'multi-or-nest'], // Be flexible yet constant with curly braces.
         'import/no-unresolved': 'error', // modules must be correctly resolved.
+        curly: ['error', 'multi-or-nest'], // Be flexible yet constant with curly braces.
+        indent: ['error', 4, {
+            SwitchCase: 1,
+            VariableDeclarator: 1,
+            outerIIFEBody: 1,
+            ArrayExpression: 1,
+            ObjectExpression: 1,
+            ImportDeclaration: 1,
+            flatTernaryExpressions: false,
+            ignoredNodes: ['JSXElement', 'JSXElement *'],
+            FunctionDeclaration: {
+                parameters: 1,
+                body: 1,
+            },
+            FunctionExpression: {
+                parameters: 1,
+                body: 1,
+            },
+            CallExpression: {
+                arguments: 1,
+            },
+        }],
 
         // ---------------------------------------------------------------------- Warnings
 
