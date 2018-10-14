@@ -1,23 +1,24 @@
 module.exports = {
 
-    // Set aribnb rules as default (community standard as of 09/2017)
-    extends: 'airbnb',
+    // Ignore configs in parent dirs
+    root: true,
 
-    // use eslint as a parser
-    parser: 'babel-eslint',
+    // Set aribnb rules as default (community standard as of 09/2017)
+    extends: [
+        'airbnb-base',
+        'airbnb-base/rules/strict',
+    ],
+
+    // Add these options to babel-lint parser (added by airbnb-base)
     parserOptions: {
-        sourceType: 'module',
         allowImportExportEverywhere: false,
         codeFrame: true,
-        // Enable  ES2017
-        ecmaVersion: 8,
     },
 
-    // Enable plugins for extra checks.
+    // // Enable plugins for extra checks.
     plugins: [
-        // Resolving module imports (instead of requires)
-        'import',
-        'jsdoc',
+        'import', // Resolving module imports (instead of requires)
+        'jsdoc', // The auto-documentation solution we use.
     ],
 
     rules: {// 0 = off, 1 = warn, 2 = error
@@ -25,7 +26,7 @@ module.exports = {
         // ------------------------------------------------------------------------ Errors
 
         'import/no-unresolved': 'error', // modules must be correctly resolved.
-        curly: ['error', 'multi-or-nest'], // Be flexible yet constant with curly braces.
+        curly: ['error', 'multi-or-nest'], // Be flexible yet consistent with curly braces.
         indent: ['error', 4, {
             SwitchCase: 1,
             VariableDeclarator: 1,
@@ -72,8 +73,6 @@ module.exports = {
         // ---------------------------------------------------------------------- Disabled
 
         'import/no-named-as-default': 'off', // Allow module vars to have any name
-        'import/no-extraneous-dependencies': 'off', // Allow using dev-dependencies
-        'import/extensions': 'off', // Don't enforce the use of extensions on imports
         'prefer-arrow-callback': 'off', // plain functions will do when not returning
         'space-before-function-paren': 'off', // This doesn't enhace readability
         'padded-blocks': 'off', // having some space sometimes helps readability
